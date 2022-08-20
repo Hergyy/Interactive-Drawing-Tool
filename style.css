@@ -1,0 +1,62 @@
+html,
+body {
+    font-size:15px;
+    margin:0px;
+    padding:0px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-color:#f5eee4;
+    font-family: Helvetica;
+}
+script {
+  width: 1000px;
+  height: 750px;
+}
+/* Button positioning */
+button {
+  border-radius: 20px;
+  background-color: pink;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 0px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
+
+button{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+/* Direction of which the » appears */
+button:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;  
+  top: 10px;
+  right: 20px;
+  transition: 0.5s;
+}
+/* When hovering, text moves */
+button:hover{
+  padding-right: 60px;
+  padding-left:10px;
+}
+
+/* Moving the » to the left when hover */
+button:hover:after {
+  opacity: 1;
+  right: 20px;
+}
+
