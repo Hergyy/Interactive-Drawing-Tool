@@ -1,3 +1,4 @@
+//Hergeanne
 let canvaswidth = 1080;
 let canvasheight = 720;
 let startButton = document;
