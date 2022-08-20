@@ -60,7 +60,6 @@ function launch() {
   squareButton = createButton("square");
   squareButton.position(1030, 180);
   squareButton.mousePressed(squareShape);
-  startProgram.mouseReleased(noBrush);
   console.log("calling");
   baseSetup();
   startProgram.remove();
@@ -122,29 +121,21 @@ function draw() {
 
 //The following functions changes the brush is the brush button was selected.
 function lineBrush() {
-  if (lineBrush.mousePressed === true);
   brush = 0;
 }
 
 function flower() {
-  if (flowerButton.mousePressed === true);
   brush = 1;
 }
 
 function squareShape() {
-  if (squareButton.mousePressed === true);
   brush = 2;
-}
-
-//Starts the program with no brush selected.
-function noBrush() {
-  brush = 0;
-  console.log("paint");
 }
 
 //If you click the DEL key, your canvas will clear. 
 function keyPressed() {
-  if (keyCode === DELETE) print("you've cleared the canvas.");
+  if (keyCode === DELETE) {
+  print("you've cleared the canvas.");
   clear();
   baseSetup();
 }
