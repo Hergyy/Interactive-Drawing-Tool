@@ -138,5 +138,5 @@ function keyPressed() {
   print("you've cleared the canvas.");
   clear();
   baseSetup();
-}
+  }
 }
